@@ -1,0 +1,210 @@
+/* css reset */
+
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* 大魔方1 */
+
+.globalHeader {
+    margin: 20px;
+}
+
+@media (min-width: 500px) {
+    .globalHeader {
+        margin: 60px 0 100px;
+    }
+}
+
+.searchForm {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (min-width: 500px) {
+    .searchForm {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.beijing {
+    position: absolute;
+    background: url(./images/666.jpg);
+    background-position: center center;
+    background-repeat: no-repeat no-repeat;
+    background-size: cover;
+    background-position: center center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    z-index: -100;
+}
+
+.fl {
+    position: fixed;
+    margin-left: 105px;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 52px;
+}
+
+.searchForm>input {
+    position: relative;
+    width: 100%;
+    margin-right: 10px;
+    margin-top: 100px;
+    height: 40px;
+    padding: 0 10px;
+    border: 1px solid #DDD;
+    background-color: rgba(250, 248, 248, 0.5);
+    border-radius: 8px;
+    color: rgb(82, 78, 78);
+}
+
+.searchForm>button {
+    white-space: nowrap;
+    padding: 0 28px;
+    border: none;
+    border-radius: 4px;
+    background: rgba(59, 115, 236, 0.7);
+    color: white;
+    font-size: 16px;
+    height: 40px;
+    margin-top: 100px;
+}
+
+
+/* 大魔方2 */
+
+.globalMain {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.siteList {
+    margin: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (min-width: 500px) {
+    .siteList {
+        margin-left: 0;
+        margin-right: -25px;
+    }
+}
+
+.siteList>li {
+    margin-bottom: 10px;
+}
+
+@media(min-width: 500px) {
+    .siteList>li {
+        margin-right: 25px;
+    }
+}
+
+.siteList .site {
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #DDD;
+    border-radius: 4px;
+    padding: 20px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.siteList .site>.logo {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 64px;
+    text-transform: uppercase;
+}
+
+.siteList .site>.link {
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+.siteList .site>.close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+    cursor: default;
+}
+
+.siteList .site:hover>.close {
+    display: block;
+}
+
+
+/* 魔方4 */
+
+.siteList .addButton {
+    border: 1px solid #DDD;
+    color: rgba(255, 255, 255, 0.9);
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 0;
+}
+
+.siteList .addButton .icon {
+    width: 56px;
+    height: 56px;
+}
+
+.siteList .addButton .text {
+    font-size: 14px;
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.siteList .addButton .icon-wrapper {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
